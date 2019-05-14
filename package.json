@@ -1,0 +1,29 @@
+{
+  "name": "dotclear2ghost",
+  "version": "1.0.0",
+  "description": "My migration script to adapt Dotclear Wiki posts into Ghost Markdown posts.",
+  "main": "migrate.js",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltoinel/Dotclear2Ghost.git"
+  },
+  "keywords": [
+    "Ghost",
+    "blog",
+    "migration",
+    "Dotclear"
+  ],
+  "author": "Ludovic Toinel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltoinel/Dotclear2Ghost/issues"
+  },
+  "homepage": "https://github.com/ltoinel/Dotclear2Ghost#readme"
+}
