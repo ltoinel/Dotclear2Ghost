@@ -1,6 +1,6 @@
 # Dotclear2Ghost
 
-My migration script to adapt Dotclear Wiki posts into Ghost Markdown posts.
+My migration script to adapt (Dotclear Wiki posts)[https://fr.dotclear.org/documentation/2.0/usage/syntaxes] into Ghost Markdown posts.
 This script generates a JSON file that can be imported directly on the Ghost admin portal.
 
 __Some behaviours for the script :__
