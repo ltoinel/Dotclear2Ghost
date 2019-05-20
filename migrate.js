@@ -254,3 +254,8 @@ async function app(){
 };
 
 app();
+
+
+module.exports = {  
+    convertWikiToMarkdown: convertWikiToMarkdown
+}

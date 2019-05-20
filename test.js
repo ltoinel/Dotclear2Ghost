@@ -1,7 +1,7 @@
 
-function testConvertWikiToMarkdown(){
+const migrate = require('./migrate')
 
-    var markdown = convertWikiToMarkdown(`
+var markdown = migrate.convertWikiToMarkdown(`
 
 ====== External URL
 [http://www.geeek.org]
@@ -79,7 +79,53 @@ Ceci est du HTML
 --name domogeek \
 nodered/node-red-docker:latest
 ///
+
+Ce blogroll est constitué de tous__ les blogs High-Tech__ que je consulte quotidiennement sur Feedly au travers des flux RSS qu'ils exposent.
+N'hésitez pas à aller visiter leurs blog et souscrire à leurs flux RSS de qualité !
+
+* [Spawnrider|https://www.spawnrider.net/]
+* [Missgeekette|http://www.missgeekette.net/]
+* [BlogduWebdesign|http://www.blogduwebdesign.com/|||true]
+* [Geeks and Com|http://www.geeksandcom.com/|||true]
+* [Services Mobiles|http://www.servicesmobiles.fr/|||true]
+* [Captain Web|http://www.captainweb.net/|||true]
+* [Tapahont|http://www.tapahont.info/|||true]
+* [JCFrogBlogII|http://jcfrog.com/blog/|||true]
+* [Korben|http://korben.info/|||true]
+* [Gizmodo|http://www.gizmodo.fr/|||true]
+* [Univers Freebox|http://www.universfreebox.com/|||true]
+* [Iphon.fr|http://www.iphon.fr/|||true]
+* [Daily Geek Show|http://dailygeekshow.com/|||true]
+* [AbriCoCotier.fr|http://www.abricocotier.fr/|||true]
+* [Descary.com|http://descary.com/|||true]
+* [Framablog|http://www.framablog.org|||true]
+* [2803|http://www.vingthuitzerotrois.fr/|||true]
+* [Le Journal du Geek|http://www.journaldugeek.com/|||true]
+* [Fredzone|http://www.fredzone.org/|||true]
+* [Ubergizmo|http://fr.ubergizmo.com/|||true]
+* [FrAndroid|http://www.frandroid.com/|||true]
+* [Blog Marketing Web 2.0 et Techno|http://www.vincentabry.com/|||true]
+* [pix-geeks.com|http://pix-geeks.com/|||true]
+* [Alsacréations|http://www.alsacreations.com/|||true]
+* [Le blog du modérateur|http://www.blogdumoderateur.com/|||true]
+* [Blog de Geek|http://bloguedegeek.net/|||true]
+* [w3sh|http://www.w3sh.com/|||true]
+* [Le blog des nouvelles technologies|http://www.blog-nouvelles-technologies.fr/|||true]
+* [iPhoneAddict.fr|http://iphoneaddict.fr/|||true]
+* [Fubiz|http://www.fubiz.net/|||true]
+* [eMxPi's Blog|http://emxpi.fr/|||true]
+* [Le blog d'Abondance|http://www.abondance.com/|||true]
+* [Geeks Are Sexy|http://www.geeksaresexy.net/|||true]
+* [Presse-citron|http://www.presse-citron.net/|||true]
+* [FrenchWeb.fr|http://frenchweb.fr/|||true]
+* [FredCavazza.net|http://www.fredcavazza.net/|||true]
+* [Standblog|http://standblog.org/blog/|||true]
+* [Be Geek|http://www.begeek.fr/|||true]
+* [WebLife|http://www.weblife.fr/|||true]
+* [Capitaine Commerce|http://www.capitaine-commerce.com/|||true]
+* [Keeg|http://www.keeg.fr/|||true]
+* [Ballajack|http://www.ballajack.com/|||true]
+* [Gonzague Dambricourt|http://gonzague.me/|||true]
 `);
 
-    console.log(markdown);
-}
+console.log(markdown);
