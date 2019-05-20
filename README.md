@@ -1,7 +1,16 @@
 # Dotclear2Ghost
+
 My migration script to adapt Dotclear Wiki posts into Ghost Markdown posts.
 This script generates a JSON file that can be imported directly on the Ghost admin portal.
 
-Move all your Dotclear Public content into the Ghost image directory : /content/images/
+__Some behaviours for the script :__
+- All the Dotclear categories are transformed into Ghost tags
+- The fisrt image in the excerpt is transformed into a feature image in Ghost.
+- Only published article in Wiki format are migrated !
+- The excerpt is concat with the content to feed the Ghost post content.
+- HTML snippet with ///html is also supported.
+- Yash content is also migrated.
 
-Warning : Only published article in Wiki format are migrated !
+__The things to do manually :__
+- Move all your Dotclear Public content into the Ghost image directory : /content/images/
+- The main user has to be created manualy with the id = 1 to allow the import.
