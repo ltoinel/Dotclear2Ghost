@@ -14,3 +14,4 @@ __Some behaviours for the script :__
 __The things to do manually :__
 - Move all your Dotclear Public content into the Ghost image directory : /content/images/
 - The main user has to be created manualy with the id = 1 to allow the import.
+- The config.js file can be adapt to add transformation rules and / or URL rewriting rules.
